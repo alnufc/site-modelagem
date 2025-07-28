@@ -9,9 +9,8 @@
   <body style="margin: 0; overflow: hidden;">
      <video id="video1" src="src/video1.mp4" autoplay loop crossorigin="anonymous" playsinline webkit-playsinline muted style="display: none;"></video>
      <a-scene vr-mode-ui="enabled: false" embedded arjs="debugUIEnabled: false">
-      <a-marker type="pattern" url="src/pattern-marker_hand.patt">
-          <a-image src="src/foto_quixada.png" rotation="-90 0 0" width="1.5" height="1"></a-image>
-      </a-marker>
+      <a-marker preset = "hiro">
+        <a-video src="#video1" width="1.7" height="1" rotation="-90 -90 0"></a-video>      </a-marker>
       <a-entity camera></a-entity>
     </a-scene>
     
